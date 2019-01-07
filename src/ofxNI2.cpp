@@ -30,7 +30,9 @@ namespace ofxNI2
        path = "/Users/fred/Desktop/OpenNI-MacOSX-x64-2.2/Tools/OpenNI2/Drivers";
         cout<< "here is the file path " + path <<endl;
 #else
-        path = ofFilePath::getCurrentExeDir() + "/OpenNI2/Drivers"; // windows
+        path = ofFilePath::getCurrentExeDir() + "OpenNI2\\Drivers"; // windows
+		cout << "here is the file path " + path << endl;
+
 #endif
         if (ofFile::doesFileExist(path, false))
         {
@@ -90,7 +92,7 @@ bool Device::setup(int device_id)
 	
 	openni::Array<openni::DeviceInfo> deviceList;
 	openni::OpenNI::enumerateDevices(&deviceList);
-	
+	listDevices();
 	if (device_id < 0
 		|| device_id >= deviceList.getSize())
 	{
