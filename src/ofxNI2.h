@@ -5,7 +5,7 @@
 #include "OpenNI.h"
 #include <assert.h>
 
-//#define HAVE_NITE2
+#define HAVE_NITE2
 
 #include "utils/DoubleBuffer.h"
 

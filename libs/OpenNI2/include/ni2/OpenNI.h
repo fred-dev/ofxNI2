@@ -1,4 +1,4 @@
-/*****************************************************************************
+ /*****************************************************************************
 *                                                                            *
 *  OpenNI 2.x Alpha                                                          *
 *  Copyright (C) 2012 PrimeSense Ltd.                                        *
@@ -2384,7 +2384,7 @@ private:
     OniRecorderHandle m_recorder;
 };
 
-// Implemetation
+// Implemetation    
 Status VideoStream::create(const Device& device, SensorType sensorType)
 {
 	OniStreamHandle streamHandle;

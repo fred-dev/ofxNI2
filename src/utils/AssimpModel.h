@@ -11,8 +11,7 @@
 #include "ofMain.h"
 #include "ofxNiTE2.h"
 #include "ofxAssimpModelLoader.h"
-#include "aiMesh.h"
-#include "aiScene.h"
+
 
 using namespace nite;
 
@@ -94,7 +93,7 @@ public:
                 
                 // The voodoo trick(s), found using bruteforce trial and error
                 // TODO: Translate this into some proper quaternion multipication
-                ofVec3f r = joint.getOrientationQuat().getEuler() / 180 * PI;
+                ofVec3f r = joint.getOrientationEulerDeg() / 180 * PI;
                 switch(type){
                     case JOINT_TORSO: {
                         aiMatrix4x4 rx, ry, rz;

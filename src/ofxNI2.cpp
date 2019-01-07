@@ -26,7 +26,9 @@ namespace ofxNI2
 
         string path;
 #ifndef TARGET_WIN32
-        path = ofFilePath::getCurrentExeDir() + "/Drivers"; // osx / linux
+        //path = ofFilePath::getCurrentExeDir() + "OpenNI2/Drivers/"; // osx / linux
+       path = "/Users/fred/Desktop/OpenNI-MacOSX-x64-2.2/Tools/OpenNI2/Drivers";
+        cout<< "here is the file path " + path <<endl;
 #else
         path = ofFilePath::getCurrentExeDir() + "/OpenNI2/Drivers"; // windows
 #endif
@@ -75,7 +77,7 @@ Device::~Device()
 bool Device::setup()
 {
 	ofxNI2::init();
-	
+
 	if (!check_error(device.open(openni::ANY_DEVICE))) return false;
 	if (!check_error(device.setDepthColorSyncEnabled(true))) return false;
 	
