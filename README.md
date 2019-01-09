@@ -1,5 +1,10 @@
 Setup
 ========
+This version is forked from https://github.com/satoruhiga/ofxNI2
+
+I have made changes to support kinecV2 on mac and windows (cant test on linux but if you have the libs it should work). 
+
+I built libfreenect2 to work with openCL depth processing to be faster, there is currently no way to select an openCL device.
 
 OSX
 --------
@@ -20,11 +25,10 @@ Uncomment
 
 in `ofxNI2.h` to use NiTE2.
 
+
 Visual Studio
 --------
 
-Download OpenNI2 from http://structure.io/openni and install. Choose x86 (32bit) or x64 (64bit) depending on your project settings.
 
-Copy `OpenNI2\`, `OpenNI2.ini` and `OpenNI2.dll` from `C:\Program Files (x86)\OpenNI2\Redist` (x86) or `C:\Program Files\OpenNI2\Redist` (x64) to `projectFolder\bin\`.
 
-To use Microsoft Kinect through OpenNI2, install Microsoft SDK 1.x as well.
+This should just work with the project generator.
