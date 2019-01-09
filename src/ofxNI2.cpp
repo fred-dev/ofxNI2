@@ -26,8 +26,9 @@ namespace ofxNI2
 
         string path;
 #ifndef TARGET_WIN32
-        //path = ofFilePath::getCurrentExeDir() + "OpenNI2/Drivers/"; // osx / linux
-       path = "/Users/fred/Desktop/OpenNI-MacOSX-x64-2.2/Tools/OpenNI2/Drivers";
+        
+       // path = ofToDataPath("",true) + "/OpenNI2/Drivers/"; // osx / linux
+        path = ofFilePath::getCurrentExeDir() + "OpenNI2/Drivers/"; // osx / linux
         cout<< "here is the file path " + path <<endl;
 #else
         path = ofFilePath::getCurrentExeDir() + "OpenNI2\\Drivers"; // windows

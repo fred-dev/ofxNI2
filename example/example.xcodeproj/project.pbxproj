@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BFCBB38848AD0E0C8539 /* testApp.cpp */; };
 		40C55F69F602D3BE3D8C040C /* ofxNI2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38EF19EFE915639D9CF24E91 /* ofxNI2.cpp */; };
 		DFA805C945270BCAE6824DC1 /* ofxNiTE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB56539C4EACAAB391D1E131 /* ofxNiTE2.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00A1BFCBB38848AD0E0C8539 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
 		0A58FC678619FFD2840E1E73 /* AssimpModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AssimpModel.h; path = ../../../addons/ofxNI2/src/utils/AssimpModel.h; sourceTree = SOURCE_ROOT; };
 		1CC0AEFE592601759AA6B766 /* NiteCAPI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NiteCAPI.h; path = ../../../addons/ofxNI2/libs/NiTE2/include/NiteCAPI.h; sourceTree = SOURCE_ROOT; };
 		22529A1673C6B6B14B032D78 /* OniPlatformLinux-Arm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "OniPlatformLinux-Arm.h"; path = "../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-Arm/OniPlatformLinux-Arm.h"; sourceTree = SOURCE_ROOT; };
-		2D129AB0F7D46B8DFCEADEDB /* testApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
 		2D6E76763F7F1B29DA42351F /* OniPlatformWin32.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OniPlatformWin32.h; path = ../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32/OniPlatformWin32.h; sourceTree = SOURCE_ROOT; };
 		35E5E560765F3DB376595DC2 /* OniPlatformLinux-x86.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "OniPlatformLinux-x86.h"; path = "../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-x86/OniPlatformLinux-x86.h"; sourceTree = SOURCE_ROOT; };
 		38EF19EFE915639D9CF24E91 /* ofxNI2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxNI2.cpp; path = ../../../addons/ofxNI2/src/ofxNI2.cpp; sourceTree = SOURCE_ROOT; };
@@ -232,6 +230,8 @@
 		E42963732163EDD300A6A9E2 /* ofSoundBaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofSoundBaseTypes.h; path = ../../../libs/openFrameworks/sound/ofSoundBaseTypes.h; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E79319DFE571D36E5665A2F5 /* ofxNiTE2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxNiTE2.h; path = ../../../addons/ofxNI2/src/ofxNiTE2.h; sourceTree = SOURCE_ROOT; };
@@ -719,8 +719,8 @@
 			isa = PBXGroup;
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				00A1BFCBB38848AD0E0C8539 /* testApp.cpp */,
-				2D129AB0F7D46B8DFCEADEDB /* testApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -814,7 +814,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved \"$OF_PATH/libs/fmodex/lib/osx/libfmodex.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\ncp -R ../../../addons/ofxNI2/libs/OpenNI2/lib/osx/ \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\";\n\ncp -R ../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers/ \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\n\ncp -R ../../../addons/ofxNI2/libs/NiTE2/lib/osx/ \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\";\n\necho \"$GCC_PREPROCESSOR_DEFINITIONS\";\n";
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved \"$OF_PATH/libs/fmodex/lib/osx/libfmodex.dylib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\ncp -R ../../../addons/ofxNI2/libs/OpenNI2/lib/osx/ \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\";\ncp -R ../../../addons/ofxNI2/libs/NiTE2/lib/osx/libNiTE2.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libNiTE2.dylib\";\ncp -R ../../../addons/ofxNI2/libs/NiTE2/lib/osx/NiTE.ini \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/NiTE.ini\";\ncp -R ../../../addons/ofxNI2/libs/NiTE2/lib/osx/NiTE2 \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\";\ninstall_name_tool -change libOpenNI2.dylib @executable_path/../MacOS/libOpenNI2.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\necho \"$GCC_PREPROCESSOR_DEFINITIONS\";\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -824,7 +824,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				40C55F69F602D3BE3D8C040C /* ofxNI2.cpp in Sources */,
 				DFA805C945270BCAE6824DC1 /* ofxNiTE2.cpp in Sources */,
 			);
@@ -876,7 +876,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -921,7 +922,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -936,7 +938,6 @@
 					"$(LIB_OF)",
 					../../../addons/ofxNI2/libs/NiTE2/lib/osx/libNiTE2.dylib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/libOpenNI2.dylib,
-					"../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers/libfreenect2-openni2.0.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -985,7 +986,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -1041,7 +1043,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -1086,7 +1089,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -1101,7 +1105,6 @@
 					"$(LIB_OF_DEBUG)",
 					../../../addons/ofxNI2/libs/NiTE2/lib/osx/libNiTE2.dylib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/libOpenNI2.dylib,
-					"../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers/libfreenect2-openni2.0.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -1139,7 +1142,8 @@
 					../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32,
 					../../../addons/ofxNI2/libs/OpenNI2/lib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx,
-					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2,
+					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/OpenNI2/Drivers,
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
@@ -1154,7 +1158,6 @@
 					"$(LIB_OF)",
 					../../../addons/ofxNI2/libs/NiTE2/lib/osx/libNiTE2.dylib,
 					../../../addons/ofxNI2/libs/OpenNI2/lib/osx/libOpenNI2.dylib,
-					"../../../addons/ofxNI2/libs/OpenNI2/lib/osx/Drivers/libfreenect2-openni2.0.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

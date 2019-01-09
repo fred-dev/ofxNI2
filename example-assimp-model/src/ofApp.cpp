@@ -48,8 +48,9 @@ void ofApp::draw(){
     tracker.draw();
     
     ofPushMatrix();
-    ofRotate(90, 1, 0, 0);
+    ofRotate(90, 0, 0, 0);
     light.enable();
+    ofSetColor(255);
     model.draw(OF_MESH_FILL);
     ofDisableLighting();
     ofPopMatrix();

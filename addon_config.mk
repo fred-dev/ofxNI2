@@ -7,9 +7,12 @@ meta:
 
 osx:
 	ADDON_LIBS=
-ADDON_LIBS     += libs/NiTE2/lib/osx/libNiTE2.dylib
-ADDON_LIBS     += libs/OpenNI2/lib/osx/libOpenNI2.dylib
-ADDON_LIBS     += libs/OpenNI2/lib/osx/Drivers/libfreenect2-openni2.0.dylib
+	ADDON_LIBS     += libs/NiTE2/lib/osx/libNiTE2.dylib
+	ADDON_LIBS     += libs/OpenNI2/lib/osx/libOpenNI2.dylib
+
+	ADDON_LIBS_EXCLUDE =    libs/OpenNI2/lib/osx/OpenNI2/Drivers/libfreenect2-openni2.0.dylib
+	ADDON_LIBS_EXCLUDE =    libs/OpenNI2/lib/osx/OpenNI2/Drivers/libfreenect2.dylib
+
 
 
 
