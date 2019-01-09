@@ -3,6 +3,7 @@ Setup
 This version is forked from https://github.com/satoruhiga/ofxNI2
 
 I have made changes to support kinectV2 on mac and windows using libfreenect2 (https://github.com/OpenKinect/libfreenect2/) (cant test on linux but if you have the libs it should work). 
+This is working with openframeworks 0.10.1
 
 I built libfreenect2 to work with openCL depth processing to be faster, there is currently no way to select an openCL device.
 
