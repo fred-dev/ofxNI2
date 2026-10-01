@@ -1,2 +1,38 @@
 .DS_Store
 
+# openFrameworks: commit src/, bin/data/ and addons.make only.
+# Regenerate IDE projects with projectGenerator.
+*.xcodeproj/
+*.xcworkspace/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.cbp
+xcuserdata/
+.vscode/
+*/Makefile
+*/config.make
+*/Project.xcconfig
+*/openFrameworks-Info.plist
+*/of.entitlements
+*/icon.rc
+
+# Build output (bin/data is kept)
+*/bin/*
+!*/bin/data/
+obj/
+build/
+*.o
+*.app/
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# OS / editor
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+.idea/
